@@ -42,3 +42,41 @@ body{
 .buttonArea{
   text-align: center;
 }
+
+.randomTeamButton{
+  font-size: 20px;
+  background-color: #222E50;
+  color:#EFF1ED;
+  outline:none;
+  padding:20px;
+  border-radius: 5%;
+}
+
+.userInputArea{
+  text-align: center;
+  margin-top:30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+
+input {
+  outline: none;
+  width: 400px;
+  height: 50px;
+  font-size: 30px;
+ }
+
+ .submitAnswer{
+  font-size: 20px;
+  background-color: #222E50;
+  color:#EFF1ED;
+  outline:none;
+  padding:20px;
+  border-radius: 5%;
+ }
+
+ .submitArea{
+   text-align: center;
+ }
