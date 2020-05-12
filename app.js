@@ -1,3 +1,13 @@
+// Grab UI Elements
+let colorOne = document.querySelector('.colorOne'),
+    colorTwo = document.querySelector('.colorTwo'),
+    colorThree = document.querySelector('.colorThree'),
+    randomTeamBtn = document.querySelector('.randomTeamButton'),
+    input = document.querySelector('input'),
+    submitBtn = document.querySelector('.submitAnswer');
+
+
+
 let nflTeams = [
   { teamName: 'Arizona Cardinals',
     colors: ['#97233F', '#000000', '#FFB612' ]
@@ -21,3 +31,4 @@ let nflTeams = [
     colors: ['#0B162A', '#C83803']
   }
 ];
+
