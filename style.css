@@ -1,0 +1,44 @@
+body{
+  background-color: #B2AA8E;
+}
+
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #222E50;
+  color: #EFF1ED;
+  font-size: 30px;
+}
+
+.column {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height:200px;
+  float: left;
+  width: 32.95%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.colorOne{
+  background-color: #A71930;
+}
+
+.colorTwo{
+  background-color: #000000;
+}
+
+.colorThree{
+  background-color: #A5ACAF;
+}
+
+.buttonArea{
+  text-align: center;
+}
