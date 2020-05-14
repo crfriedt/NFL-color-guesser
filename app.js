@@ -82,7 +82,60 @@ const nflTeams = [
     colors: ['#002244', '#866D4B']
   },
   {
-
+    teamName: 'Miami Dolphins',
+    colors: ['#008E97', '#FC4C02', '#005778']
+  },
+  {
+     teamName: 'Minnesota Vikings',
+     colors: ['#4F2683', '#FFC62F']
+  },
+  {
+    teamName: 'New England Patriots',
+    colors: ['#002244', '#C60C30', '#B0B7BC']
+  },
+  {
+    teamName: 'New Orleans Saints',
+    colors: ['#D3BC8D', '#101820']
+  },
+  {
+    teamName: 'New York Giants',
+    colors: ['#0B2265', '#A71930', '#A5ACAF']
+  },
+  {
+    teamName: 'New York Jets',
+    colors: ['#125740', '#000000', '#FFF']
+  },
+  {
+    teamName: 'Oakland Raiders',
+    colors: ['#000000', '#A5ACAF']
+  },
+  {
+    teamName: 'Philadelphia Eagles',
+    colors: ['#004C54', '#A5ACAF', '#000000']
+  },
+  {
+    teamName: 'Pittsburgh Steelers',
+    colors: ['#FFB612', '#003087', '#C60C30']
+  },
+  {
+    teamName: 'San Francisco 49ers',
+    colors: ['#AA0000', '#B3995D']
+  },
+  {
+    teamName: 'Seattle Seahawks',
+    colors: ['#002244', '#69BE28', '#A5ACAF']
+  },
+  {
+    teamName: 'Tampa Bay Buccaneers',
+    colors: ['#D50A0A', '#FF7900', '#0A0A08']
+  },
+  {
+    teamName: 'Tennessee Titans',
+    colors: ['#0C2340', '#4B92DB', '#C8102E']
+  },
+  {
+    teamName: 'Washington Redskins',
+    colors: ['#773141', '#FFB612']
   }
 ];
 
