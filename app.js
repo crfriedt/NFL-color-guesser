@@ -8,14 +8,17 @@ const colorOne = document.querySelector('.colorOne'),
 
 // Event Handlers
 randomTeamBtn.addEventListener('click', function(){
-  colorTwo.style.display = 'block';
   let generatedTeam = randomSelect();
+  console.log(generatedTeam);
   if(generatedTeam.colors.length === 3){
+  colorTwo.style.display = 'block';
   colorOne.style.backgroundColor = generatedTeam.colors[0];
   colorTwo.style.backgroundColor = generatedTeam.colors[1];
   colorThree.style.backgroundColor = generatedTeam.colors[2];
   } else if(generatedTeam.colors.length === 2){
     colorTwo.style.display = 'none';
+    colorOne.style.backgroundColor = generatedTeam.colors[0];
+    colorThree.style.backgroundColor = generatedTeam.colors[1];
   }
 
 });
