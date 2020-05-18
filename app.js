@@ -7,14 +7,20 @@ const colorOne = document.querySelector('.colorOne'),
       submitBtn = document.querySelector('.submitAnswer');
 
 // Event Handlers
+
+/* Random Team Button
+  on click it will randomly select a team object, then change the displayed colors to that team color
+
+  if the team only has two colors, modify css
+*/
 randomTeamBtn.addEventListener('click', function(){
   let generatedTeam = randomSelect();
   console.log(generatedTeam);
   if(generatedTeam.colors.length === 3){
-  colorTwo.style.display = 'block';
-  colorOne.style.backgroundColor = generatedTeam.colors[0];
-  colorTwo.style.backgroundColor = generatedTeam.colors[1];
-  colorThree.style.backgroundColor = generatedTeam.colors[2];
+    colorTwo.style.display = 'block';
+    colorOne.style.backgroundColor = generatedTeam.colors[0];
+    colorTwo.style.backgroundColor = generatedTeam.colors[1];
+    colorThree.style.backgroundColor = generatedTeam.colors[2];
   } else if(generatedTeam.colors.length === 2){
     colorTwo.style.display = 'none';
     colorOne.style.backgroundColor = generatedTeam.colors[0];
@@ -23,11 +29,21 @@ randomTeamBtn.addEventListener('click', function(){
 
 });
 
-/* Random Team Button
-  on click it will randomly select a team object, then change the displayed colors to that team color
+/* Submit answer btn
+  on click it will evaluate whether the input matches the generated team name. if it does then display success alert and clear input field.
 
-  if the team only has two colors, modify css
+  if not correct then display failed alert and clear input field.
 */
+
+submitBtn.addEventListener('click', function(){
+  if(input.value.toLowerCase() === generatedTeam.teamName.toLowerCase()){
+    // success
+    // clear input
+  } else {
+    // display error
+    // clear input
+  }
+});
 
 // Randomly select team function
 function randomSelect(){
