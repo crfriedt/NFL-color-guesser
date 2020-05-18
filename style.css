@@ -91,3 +91,8 @@ input {
   color: #222E50;
   text-align: center;
  }
+
+ .alert{
+   text-align: center;
+   font-size: 20px;
+ }
