@@ -7,6 +7,29 @@ const colorOne = document.querySelector('.colorOne'),
       submitBtn = document.querySelector('.submitAnswer');
 
 // Event Handlers
+randomTeamBtn.addEventListener('click', function(){
+  colorTwo.style.display = 'block';
+  let generatedTeam = randomSelect();
+  if(generatedTeam.colors.length === 3){
+  colorOne.style.backgroundColor = generatedTeam.colors[0];
+  colorTwo.style.backgroundColor = generatedTeam.colors[1];
+  colorThree.style.backgroundColor = generatedTeam.colors[2];
+  } else if(generatedTeam.colors.length === 2){
+    colorTwo.style.display = 'none';
+  }
+
+});
+
+/* Random Team Button
+  on click it will randomly select a team object, then change the displayed colors to that team color
+
+  if the team only has two colors, modify css
+*/
+
+// Randomly select team function
+function randomSelect(){
+ return nflTeams[Math.floor(Math.random() * nflTeams.length)];
+};
 
 
 
@@ -138,4 +161,3 @@ const nflTeams = [
     colors: ['#773141', '#FFB612']
   }
 ];
-
