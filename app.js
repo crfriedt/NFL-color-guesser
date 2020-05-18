@@ -4,7 +4,8 @@ const colorOne = document.querySelector('.colorOne'),
       colorThree = document.querySelector('.colorThree'),
       randomTeamBtn = document.querySelector('.randomTeamButton'),
       input = document.querySelector('input'),
-      submitBtn = document.querySelector('.submitAnswer');
+      submitBtn = document.querySelector('.submitAnswer'),
+      alert = document.querySelector('.alert');
 
 // Event Handlers
 
@@ -13,8 +14,11 @@ const colorOne = document.querySelector('.colorOne'),
 
   if the team only has two colors, modify css
 */
+var selectedTeam;
 randomTeamBtn.addEventListener('click', function(){
+  input.value = '';
   let generatedTeam = randomSelect();
+  selectedTeam = generatedTeam;
   console.log(generatedTeam);
   if(generatedTeam.colors.length === 3){
     colorTwo.style.display = 'block';
@@ -36,10 +40,25 @@ randomTeamBtn.addEventListener('click', function(){
 */
 
 submitBtn.addEventListener('click', function(){
-  if(input.value.toLowerCase() === generatedTeam.teamName.toLowerCase()){
+  if(input.value.toLowerCase() === selectedTeam.teamName.toLowerCase()){
+    alert.style.display = 'block';
+    alert.style.backgroundColor = 'green';
+    alert.innerHTML = 'Success !';
+    setTimeout(function(){
+      alert.style.display = 'none';
+      alert.innerHTML = 'none';
+    },3000);
     // success
     // clear input
   } else {
+    alert.style.display = 'block';
+    alert.style.backgroundColor = 'red';
+    alert.innerHTML = 'Incorrect !';
+    setTimeout(function(){
+      alert.style.display = 'none';
+      alert.innerHTML = 'none';
+    },3000);
+
     // display error
     // clear input
   }
